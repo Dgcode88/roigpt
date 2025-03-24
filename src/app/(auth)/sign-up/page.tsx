@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { SmtpMessage } from "../smtp-message";
-import { signUpAction } from "@/app/actions";
 import Navbar from "@/components/navbar";
 
 export default async function Signup(props: {
@@ -84,7 +83,6 @@ export default async function Signup(props: {
             </div>
 
             <SubmitButton
-              formAction={signUpAction}
               pendingText="Signing up..."
               className="w-full"
             >

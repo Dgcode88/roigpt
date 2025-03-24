@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { SmtpMessage } from "../smtp-message";
-import { forgotPasswordAction } from "@/app/actions";
 import Navbar from "@/components/navbar";
 
 export default async function ForgotPassword(props: {
@@ -56,7 +55,6 @@ export default async function ForgotPassword(props: {
             </div>
 
             <SubmitButton
-              formAction={forgotPasswordAction}
               pendingText="Sending reset link..."
               className="w-full"
             >
