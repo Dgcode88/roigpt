@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { createClient } from "../../supabase/server";
+
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
 import UserProfile from "./user-profile";
@@ -8,11 +8,7 @@ import { ThemeSwitcher } from "./theme-switcher";
 import ConsultationButton from "./consultation-button";
 
 export default async function Navbar() {
-  const supabase = createClient();
 
-  const {
-    data: { user },
-  } = await (await supabase).auth.getUser();
 
   return (
     <nav className="w-full border-b border-border bg-background/80 backdrop-blur-md py-4 sticky top-0 z-50">
@@ -55,7 +51,7 @@ export default async function Navbar() {
         <div className="flex gap-4 items-center">
           <ThemeSwitcher />
 
-          {user ? (
+          {/* {user ? (
             <>
               <Link href="/dashboard" className="hidden md:block">
                 <Button variant="outline" size="sm">
@@ -65,7 +61,7 @@ export default async function Navbar() {
               <UserProfile />
             </>
           ) : (
-            <>
+            <> */}
               <div className="hidden md:block">
                 <ConsultationButton size="sm" />
               </div>
@@ -77,8 +73,8 @@ export default async function Navbar() {
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-5 w-5" />
               </Button>
-            </>
-          )}
+            {/* </>
+          )} */}
         </div>
       </div>
     </nav>
