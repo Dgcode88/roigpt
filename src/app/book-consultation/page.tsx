@@ -22,6 +22,28 @@ export const metadata: Metadata = {
     description:
       "Schedule your free 15-minute consultation to discover how AI automation can transform your small business.",
     type: "website",
+    url: "https://eloquent-agnesi2-76keh.view-2.tempo-dev.app/book-consultation",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=1200&q=80",
+        width: 1200,
+        height: 630,
+        alt: "Book Free Consultation - RoiGPT AI Automation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Book Free Consultation - RoiGPT AI Automation",
+    description:
+      "Schedule your free 15-minute consultation to discover how AI automation can transform your small business.",
+    images: [
+      "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=1200&q=80",
+    ],
+  },
+  alternates: {
+    canonical:
+      "https://eloquent-agnesi2-76keh.view-2.tempo-dev.app/book-consultation",
   },
 };
 
