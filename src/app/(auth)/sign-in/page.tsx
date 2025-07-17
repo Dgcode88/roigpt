@@ -1,4 +1,3 @@
-import { signInAction } from "@/app/actions";
 import { FormMessage, Message } from "@/components/form-message";
 import Navbar from "@/components/navbar";
 import { SubmitButton } from "@/components/submit-button";
@@ -81,7 +80,6 @@ export default async function SignInPage({ searchParams }: LoginProps) {
             <SubmitButton
               className="w-full"
               pendingText="Signing in..."
-              formAction={signInAction}
             >
               Sign in
             </SubmitButton>
